@@ -1,0 +1,33 @@
+
+canvas#canvas{
+  height: 80%;
+  width: 80%;
+  margin: 5% 10%;
+  border: 2px solid black;
+}
+
+.info_yellow{
+  width: 80%;
+  margin: auto 8%;
+  padding: 2%;
+  background: #eeee77;
+  border: solid 1px #dddd66;
+  border-radius: 5px;
+}
+
+.background-collided{
+  background-color: #ffcccc;
+}
+
+body{
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.tutorial{
+  top: 0;
+  position: absolute;
+  background: #fff;
+  display: block;
+}
