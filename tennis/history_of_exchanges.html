@@ -1,40 +1,130 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <div>
-      <p>Registered persons include:</p>
-      avocado18, blue, Ace, Maxicl, Pengy, Sharee, and JaffaCake!
-    </div>
-    <div>
-      <p>The game has started!</p>
+  <head>
+    <style>
+    .collapsible{
+      border: 1px solid dark-grey;
+    }
+    .collapsible-head{
+      border: 1px solid dark-grey;
+      background: #eeeeef;
+      padding: 2rem;
+    }
+    .collapsible-content{
+      font-size: 0.9rem;
+      display: block;
+    }
+    .collapsible-contentclosed{
+      display: none;
+    }
+    .collapsible-content > * {
+      margin: 0px;
+      border: 1px solid #222122;
+    }
+    </style>
+    <script>
+      var w;
+      startPage(){
+        w.collapsibles = document.getElementsByClassName("collapsible");
+        for (let cwindow of w.collapsibles){
+          cwindow.contentThing = cwindow.getElementsByClassName('collapsible-content')[0];
+          cwindow.cbutton = cwindow.getElementsByClassName('collapsible-press')[0];
+          cwindow.cbutton.on('click', ()=>{
+            cwindow.contentThing.classList.toggle('collapsible-contentclosed');
+          })
+        }
+      }
+    </script>
+  </head>
+  <body onload='startPage()'>
+    
+    <div class='collapsible'>
+      <div class='collapsible-head'>
+        <h3>Registered persons include:</h3>
+        <button class='collapsible-press'></button>
+      </div>
+      <div class='collapsible-content'>
+        <p>avocado18, blue, Ace, maxicl, pengy, Sharee, JaffaCake, Paddy jo, ms and Nanners!</p>
+      </div>
     </div>
     
-    <div>
-      <p>Maxicl challenges avocado18. Discussions have started between Maxicl and avocado18.</p>
+    <div class='collapsible'>
+      <div class='collapsible-head'>
+        <h3>Initial points: </h3>
+        <button class='collapsible-press'></button>
+      </div>
+      <div class='collapsible-content'>
+        <p>avocado18: 7</p>
+        <p>blue: 4</p>
+        <p>Ace: 2</p>
+        <p>Maxicl: -1</p>
+        <p>Pengy: -1</p>
+        <p>Sharee: -2</p>
+        <p>JaffaCake: -3</p>
+        <p>Paddy Jo: -4</p>
+        <p>Ms: -4</p>
+        <p>Nanners: -4</p>
+      </div>
     </div>
 
     
-    <div>
-      <p>JaffaCake challenges Pengy. Pengy accepts the challenge!</p>
-    </div>
-
-    <div>
-      <p>M challenges K. To an imaginary spot.</p>
-      <p>M and K shall be added.</p>
-    </div>
-
-    <div>
-      <p>Paddy Jo clambers onto the ladder...</p>
-    </div>
-
-    <div>
-      <p>JaffaCake challenges Maxicl and Paddy Jo. </p>
-      <p>Maxicl accepts. Paddy Jo challenges JaffaCake.</p>
-    </div>
-
-    <div>
-      <p>Ace challenges blue.</p>
-    </div>
+    <div class='history collapsible'>
+      <div class='collapsible-head'>
+        <h3>History</h3>
+        <button class='collapsible-press'></button>
+      </div>
+      <div class='collapsible-content'>
+        <div>
+          <p>Registered persons include:</p>
+          avocado18, blue, Ace, Maxicl, Pengy, Sharee, and JaffaCake!
+        </div>
+        
+        <div>
+          <p>The game has started!</p>
+        </div>
+        
+        <div>
+          <p>Maxicl challenges avocado18. Discussions have started between Maxicl and avocado18.</p>
+        </div>
     
+        
+        <div>
+          <p>JaffaCake challenges Pengy. Pengy accepts the challenge!</p>
+        </div>
+    
+        <div>
+          <p>M challenges K. To an imaginary spot.</p>
+          <p>M and K shall be added. With -4 points each. K is now Nanners. M is now Ms. Ms challenge to Nanners is complete.</p>
+        </div>
+    
+        <div>
+          <p>Paddy Jo clambers onto the ladder...</p>
+        </div>
+    
+        <div>
+          <p>JaffaCake challenges Maxicl and Paddy Jo. </p>
+          <p>Maxicl accepts. Paddy Jo challenges JaffaCake.</p>
+        </div>
+    
+        <div>
+          <p>Ace challenges blue. Blue Accepts.</p>
+        </div>
+    
+        <div>
+          <p>Maxicl beats JaffaCake. </p>
+          <p> -1+6 = 5 </p>
+          <p> -3-4 = -7 </p>
+        </div>
+        
+        
+        <div>
+          <p>avocado18 loses to Maxicl.</p>
+          <p>7-4 = 3</p>
+          <p> 5+6 = 11</p>
+        </div>
+        
+      </div>
+    </div>
+      
   </body>
 </html>
