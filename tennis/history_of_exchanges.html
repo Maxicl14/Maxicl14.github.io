@@ -6,9 +6,11 @@
       border: 1px solid dark-grey;
     }
     .collapsible-head{
+      position: absolute;
       border: 1px solid dark-grey;
       background: #eeeeef;
       padding: 2rem;
+      float: left;
     }
     .collapsible-content{
       font-size: 0.9rem;
@@ -20,17 +22,25 @@
     .collapsible-content > * {
       margin: 0px;
       border: 1px solid #222122;
+      padding: .5rem;
+    }
+    .collapsible-press {
+      float: right;
+      width: 1.5rem;
+      height: 1.5rem;
+      display: inline-block;
+      position: absolute;
     }
     </style>
     <script>
       var w;
       startPage(){
         w.collapsibles = document.getElementsByClassName("collapsible");
-        for (let cwindow of w.collapsibles){
-          cwindow.contentThing = cwindow.getElementsByClassName('collapsible-content')[0];
-          cwindow.cbutton = cwindow.getElementsByClassName('collapsible-press')[0];
-          cwindow.cbutton.on('click', ()=>{
-            cwindow.contentThing.classList.toggle('collapsible-contentclosed');
+        for (let [c, cwindow] of w.collapsibles){
+          w.collapsibles[c].contentThing = cwindow.getElementsByClassName('collapsible-content')[0];
+          w.collapsibles[c].cbutton = cwindow.getElementsByClassName('collapsible-press')[0];
+          w.collapsibles[c].cbutton.on('click', (ev)=>{
+            w.collapsibles[c].contentThing.classList.toggle('collapsible-contentclosed');
           })
         }
       }
