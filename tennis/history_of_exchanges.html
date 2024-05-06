@@ -34,7 +34,7 @@
     </style>
     <script>
       var w;
-      startPage(){
+      function startPage(){
         w.collapsibles = document.getElementsByClassName("collapsible");
         for (let [c, cwindow] of w.collapsibles){
           w.collapsibles[c].contentThing = cwindow.getElementsByClassName('collapsible-content')[0];
