@@ -1,0 +1,32 @@
+body {
+  font-size: 20px;
+}
+
+button {
+  transition: linear 0.5s;
+  background-color: white;
+  border: none;
+  color: #888;
+  padding: 0.5rem 0.6rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.05rem 0.5rem;
+  font-size: 1rem;
+  border-bottom: 2px solid transparent;
+}
+
+button:hover {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.logo {
+  font-size: 1.2rem;
+}
+
+nav > * {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=style.css.map */
