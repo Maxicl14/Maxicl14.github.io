@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>|Title|</title>
+<link href='./style.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<nav>
+ <div class='logo' style='padding-left: 10px; background-color: #eee;'>
+  <div style='display: inline-block; width: 10%'><img src='img2.jpg'/></div>
+  <p style='display: inline-block'> Andrew Wheatley's <br/> Research Group </p>
+  </div>
+ <button onclick="goto('current')">LinkLandin</button>
+ <button onclick="goto('current1')">Link2</button>
+ <button onclick="goto('current2')">Link3</button>
+ <button onclick="goto('current3')">Link3</button>
+
+ </nav>
+
+
+<main class='main page' id='page-current'>
+ <div class='big-screen'>
+  <div class='image'>
+   <img src='img1.jpg'/>
+   </div>
+  </div>
+
+ <div class='section'>
+   <div class='section-image'>
+    <div class='image'>
+	<img src='img1.jpg'/>
+     </div>
+    </div>
+
+   <div class='section-writing'>
+	Landing
+    </div>
+
+  </div>
+
+ </main>
+
+
+<main class='main page' id='page-current1'>
+
+ <div class='section'>
+
+  <div class='section-writing'>
+	Page 1
+   </div>
+
+  </div>
+
+ </main>
+
+
+<main class='main page' id='page-current2'>
+
+ <div class='section'>
+   <div class='section-writing'>
+	Page 2
+    </div>
+  </div>
+
+ </main>
+
+<main class='page'  id='page-current3'>
+ <p>
+	Page 3
+  </p>
+
+ </main>
+
+<footer>
+
+ <hr/>
+ <hr/>
+
+ </footer>
+
+
+<script type='text/javascript'>
+
+const constants = {
+  defaultpage: 'current'
+}
+
+function goto(link) {
+   history.pushState("","",`#${encodeURIComponent(link)}`)
+   PageUp()
+}
+function PageUp(){
+   let h = location.hash;
+   if (h===''){
+	h = `#${constants.defaultpage}`;
+   }
+   if (h){
+	console.log(JSON.stringify(h))
+	let ps = document.querySelectorAll(`.page`);
+	for (let p of ps){
+		let pid = `page-${h.substring(1)}`;
+		if (p.id === pid){
+			p.style.display = 'block'
+		} else {
+			p.style.display = 'none'
+		}
+	}
+   }
+}
+window.onload = ()=>{
+	console.log('loaded')
+	PageUp()
+}
+window.onhashchange = function() {
+	/* https://stackoverflow.com/questions/25806608/how-to-detect-browser-back-button-event-cross-browser */
+ 	PageUp();	
+}
+</script>
+
+<!-- End of page -->
+
+</body>
+</html>
