@@ -11,6 +11,29 @@ body {
   width: 50%;
 }
 
+.section-writing {
+  width: min(50rem, 97%);
+  font-size: 1rem;
+  margin: auto auto;
+  padding-bottom: 20rem;
+  letter-spacing: 0.04rem;
+}
+
+.section-writing-title {
+  font-weight: bold;
+  padding-top: 2rem;
+}
+
+.section-writing-image {
+  width: 100%;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.section-writing-image > .image {
+  width: 100%;
+}
+
 img {
   width: 100%;
 }
