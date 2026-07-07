@@ -1,0 +1,133 @@
+html {
+  box-sizing: border-box;
+  font-size: 90%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  background: #444;
+  color: white;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+}
+
+.sidepane-left-navigation {
+    float: left;
+    border-right: ridge 3px #00aa00;
+}
+.sidepane-right-navigation {
+    float: left;
+}
+
+.sidepane-tab{
+  position: relative;
+  display: block;
+  margin: .5rem;
+}
+.sidepane-tab-small {
+  display: none;
+}
+.sidepane-tab-large {
+  display: none;
+}
+.sidepane-tab button {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  body{
+    background: #444;
+    color: white;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .sidepane-left-navigation {
+      float: top;
+      border-right: 0px;
+      border-bottom: ridge 3px #00aa00;
+      display: flex;
+  }
+  .sidepane-right-navigation {
+      float: top;
+  }
+
+  .sidepane-tab{
+    position: relative;
+    display: block;
+    margin: .6rem;
+  }
+  .sidepane-tab-small {
+    display: none;
+  }
+  .sidepane-tab-large {
+    display: none;
+  }
+  .sidepane-tab button {
+    position: relative;
+    display: inline-block;
+    width: 15vw;
+    height: 5rem;
+  }
+  h3.side {
+    margin: 2rem;
+  }
+}
+
+
+h1{
+  font-size: 3em;
+}
+
+h2.subheading{
+  font-size: 1.5em;
+  margin: 2rem;
+}
+
+h3.subsubheading{
+  font-size: 1.2em;
+  margin: 2rem;
+  font-weight: normal;
+}
+h3.side {
+    font-size: 1.1em;
+}
+
+.section-image {
+  margin: auto;
+  margin-bottom: 3rem;
+  width: 30vw;
+  height: 30vw;
+}
+.section-image > img {
+  position: relative;
+  height: 100%;
+}
+
+a {
+  text-decoration: none; /* no underline */
+}
+
+a.downloadpdf-button {
+  background-color: #7e7e7e;
+  border: lightgreen 2px solid;
+  border-radius: 5px;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  color: lightgreen;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+button {
+  background-color: #5e5e5e;
+  color: lightgreen;
+  padding: 0.5rem;
+  font-weight: bold;
+  border: lightgreen solid 1px;
+  border-radius: 2px;
+}
