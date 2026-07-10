@@ -33,8 +33,9 @@ body{
   display: none;
 }
 .sidepane-tab-large {
-  display: inline-block;
-  width: 100%;
+  /*display: inline-block;
+  width: 100%;*/
+  display: none;
 }
 .sidepane-tab button {
   position: relative;
@@ -135,7 +136,9 @@ button:hover, button:focus {
     display: none;
   }
   .sidepane-tab-large {
-    display: inline-block;
+    /*display: inline-block;
+    width: 100%;*/
+    display: none;
   }
   .sidepane-tab button {
     position: relative;
