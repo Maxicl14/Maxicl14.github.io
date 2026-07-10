@@ -104,10 +104,19 @@ button:hover, button:focus {
   transition: 0.5s;
 }
 
-@media (max-width: 800px) {
-  html {
-    font-size: 100%;
+@media (orientation: portrait) and (max-width: 800px) {
+    html {
+      font-size: 100%;
+    }
   }
+  
+  @media (orientation: portrait) and (max-width:  400px){
+    html {
+      font-size: 3.5vw;
+    }
+  }
+  
+@media (orientation: portrait) {
   body{
     background: #444;
     color: white;
