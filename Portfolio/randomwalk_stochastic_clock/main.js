@@ -101,6 +101,6 @@ function addRectangle(w,h,x,y,parent, col='#eee'){
 }
 
 function addPoint(x,y,parent, col='#eee'){
-    addRectangle(1.2,1.2, x,y, parent, col)
+    addRectangle(0.5,0.5, x,y, parent, col)
 }
 
