@@ -27,6 +27,14 @@ The site is static
  - Use the mouse tool in the top left corner of this to point at the webpage and see where it comes uop in code (Elements tab).
  - Use network tab to refresh by saying Disable Cash (on) and refreshing.
 
+# How to host the website
+ - You need a host. Github account does this for free with github pages (1 per github account).
+ - Set one up.
+ - Put the files {index.html, style.css, images} in the location you want them to display at, say /site
+ - Then /site/ would display index.html file.
+ - If you wanna host elsewhere, put these files there.
+ - Don't forget the images!
+
 # Good luck
  - Any questions, contact Maxim Silin (Cambridge 2022 2026).
  - Or Nicholas Sammy
