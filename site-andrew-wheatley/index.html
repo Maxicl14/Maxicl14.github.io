@@ -8,76 +8,86 @@
 <!--
 <div>
  <div class='logo' style='padding-left: 10px; background-color: #eee;'>
-  <div style='display: inline-block; width: 10%'><img src='img2.jpg'/></div>
+  <div style='display: inline-block; width: 10%'><img src='./images/img2.jpg'/></div>
   <p style='display: inline-block'> Andrew Wheatley's <br/> Research Group </p>
  </div>
 -->
  <!--W3 Schools: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
 <div class="topnav" id="myTopnav">
-  <button onclick="combine(goto('current'), closeMenuW3Schools)">Home</button>
-  <button onclick="combine(goto('research'), closeMenuW3Schools)">Research - Overview</button>
-  <button onclick="combine(goto('current2'), closeMenuW3Schools)">Projects & Applications</button>
-  <button onclick="combine(goto('current3'), closeMenuW3Schools)">People</button>
-  <button onclick="combine(goto('current4'), closeMenuW3Schools)">Publications</button>
-  <button onclick="combine(goto('current5'), closeMenuW3Schools)">Opportunities</button>
+  <button onclick="combine(goto('HOME'), closeMenuW3Schools)">Home</button>
+  <button onclick="combine(goto('RESEARCH'), closeMenuW3Schools)">Research - Overview</button>
+  <button onclick="combine(goto('PROJECTS'), closeMenuW3Schools)">Projects & Applications</button>
+  <button onclick="combine(goto('PEOPLE'), closeMenuW3Schools)">People</button>
+  <button onclick="combine(goto('PUBLICATIONS'), closeMenuW3Schools)">Publications</button>
+  <button onclick="combine(goto('OPPORTUNITIES'), closeMenuW3Schools)">Opportunities</button>
   <button href="javascript:void(0);" class="icon" onclick="toggleMenuW3Schools()">
     <i>Menu</i>
   </button>
 </div>
-<!---->
- 
-<!-- <button onclick="goto('current')">LinkLandin</button>-->
 <p></p>
-<!--   <div id='dropdown-menu'>
-    <button onclick="goto('current')">Home</button>
-    <button onclick="goto('research')">Research - Overview</button>
-    <button onclick="goto('current2')">Projects & Applications</button>
-    <button onclick="goto('current3')">People</button>
-    <button onclick="goto('current4')">Publications</button>
-    <button onclick="goto('current5')">Opportunities</button>
-   </div> #-->
-<!--   <div class='dropdown-menu responsive'>
-    <button onclick="goto('current')">Home</button>
-    <button onclick="goto('research')">Research - Overview</button>
-    <button onclick="goto('current2')">Projects & Applications</button>
-    <button onclick="goto('current3')">People</button>
-    <button onclick="goto('current4')">Publications</button>
-    <button onclick="goto('current5')">Opportunities</button>
-    <div class='toggle-menu' onclick='toggleMenuJs()'> <p style='cursor:pointer'>@</p> </div>
-  -->
+
    </div>
  </div>
 
 
-<main class="main page" id='page-current'>
+<main class="main page" id='page-HOME'>
  <div class='big-screen'>
   <div class='image'>
-   <img src='img3.jpg'/>
+   <img src='./images/img3.jpg'/>
    </div>
   </div>
 
  <div class='section'>
- 
-   <div class='section-heading'>
-    <div class='section-heading-title'>
-	    <p>Wheatley lab is a center for ..., ... and ...</p>
+
+   <div class='section-landing'>
+    <div class='section-landing-title'>
+	    <p>Wheatley lab is a center for Lorem, Ipsum and Latum</p>
     </div>
-    <div class='section-heading-paragraph'>
-	    <p>At Wheatley Lab we ...</p>
+    <div class='section-landing-paragraph'>
+	    At Wheatley Lab we Lorem Ipsum At Wheatley Lab we Lorem Ipsum, At Wheatley Lab we Lorem Ipsum, At Wheatley Lab we Lorem Ipsum, At Wheatley Lab we Lorem Ipsum.
     </div>
+    <div class='section-writing-image'>
+        <div class='image'>
+          <img src='./images/img3.jpg'/>
+        </div>
+    </div>
+    <div class='section-landing-paragraph'>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+    </div>
+
   </div>
 
-   <div class='section-image'>
+  <div class='section-landing'>
+   <div class='section-landing-title'>
+     <p>At Wheatley Lab, we do things differently...</p>
+   </div>
+   <div class='section-landing-paragraph'>
+     At Wheatley Lab we Lorem Ipsum At Wheatley Lab we Lorem Ipsum, At Wheatley Lab we Lorem Ipsum, At Wheatley Lab we Lorem Ipsum, At Wheatley Lab we Lorem Ipsum.
+   </div>
+   <div class='section-landing-paragraph'>
+     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+   </div>
+   <div class='section-writing-image'>
+       <div class='image'>
+         <img src='./images/img3.jpg'/>
+       </div>
+   </div>
+
+ </div>
+
+
+<!-- COMMENT IMG SECTION SAVE:  <div class='section-image'>
     <div class='image'>
-	    <img src='img4.jpg'/>
+	    <img src='./images/img4.jpg'/>
     </div>
   </div>
-    
+-->
+
  </div>
 
  </main>
 
-<main class="main page" id='page-research'>
+<main class="main page" id='page-RESEARCH'>
 <div class='section'>
 
   <div class='section-heading'>
@@ -97,7 +107,7 @@
 <div class='section-writing-title'>Heterometallic reagents </div>
 <div class='section-writing-image'>
     <div class='image'>
-	<img src='Slide2.png'/>
+	<img src='./images/Slide2.png'/>
      </div>
 </div>
 </button>
@@ -106,7 +116,7 @@
 <div class='section-writing-title'>Heterogeneous nanocatalysis</div>
 <div class='section-writing-image'>
     <div class='image'>
-	<img src='Slide5new.png'/>
+	<img src='./images/Slide5new.png'/>
      </div>
 </div>
 </button>
@@ -115,7 +125,7 @@
 <div class='section-writing-title'>Composite and energy materials </div>
 <div class='section-writing-image'>
     <div class='image'>
-	<img src='Slide8.png'/>
+	<img src='./images/Slide8.png'/>
      </div>
 </div>
 </button>
@@ -126,7 +136,9 @@
 
 
 <main class="main page" id='page-research-hetero-reagent-1'>
-<button onclick="goto('research')()"> <<< Research </button>
+  <div class='section-heading-title'>
+    <button class='big-button' onclick="goto('RESEARCH')()"> <<< Back to Research </button>
+  </div>
 <div class='section-heading-title'> Heterometallic reagents </div>
 <div class='section-writing'>
 We study the directed elaboration of organic substrates using chemoselective bases. With collaborators in Tokyo, we have developed a range of amide reagents that incorporate a strongly electropositive metal and a more electronegative metal. For example, in 2007 we introduced the concept of directed orthocupration using (TMP)2Cu(CN)Li2(THF) (TMP = 2,2,6,6-tetramethylpiperidide; J. Am. Chem. Soc., 2007, 129, 15102). A succession of papers followed that led to an invited review in Dalton Trans., 2014, 43, 14181.
@@ -134,7 +146,7 @@ We study the directed elaboration of organic substrates using chemoselective bas
 
 <div class='section-writing-image'>
     <div class='image'>
-	<img src='Slide1.png'/>
+	<img src='./images/Slide1.png'/>
      </div>
 </div>
 
@@ -143,17 +155,19 @@ For our most recent advances in cuprate chemistry see Chem. Sci., 2017, 8, 4904.
 
 <div class='section-writing-image'>
     <div class='image'>
-	<img src='Slide2.png'/>
+	<img src='./images/Slide2.png'/>
      </div>
 </div>
- 
+
 
 We have now moved beyond cuprate chemistry; using argentate bases to elaborate aromatic molecules. See Chem. Sci., 2020, 11, 1855.
 </div>
 </main>
 
 <main class="main page" id='page-research-hetero-nanocatalsis'>
-<button onclick="goto('research')()"> <<< Research </button>
+  <div class='section-heading-title'>
+    <button class='big-button' onclick="goto('RESEARCH')()"> <<< Back to Research </button>
+  </div>
 <div class='section-heading-title'>Heterogeneous nanocatalysis</div>
 <div class='section-writing'>
 Access to stable and controllable metallic nanoparticles is vital in catalysis. With members of Nagoya University we have created chitin-supported Ru-based catalysts for the selective hydrogenation of aromatics in water (Catal. Sci. Technol., 2016, 6, 5801). We have also developed photocatalysts using semiconductor-based nanocomposites (e.g. of SnO2-PbS) for water treatment (Nanoscale, 2016, 8, 2727) and identified Cu-Au nanocomposites for late-stage N-alkylation of amines with alcohols at ambient temperature (Sci. Rep., 2018, 8, 6931).
@@ -161,14 +175,14 @@ Access to stable and controllable metallic nanoparticles is vital in catalysis. 
 
 <div class='section-writing-image'>
     <div class='image'>
-	<img src='Slide3.png'/>
+	<img src='./images/Slide3.png'/>
      </div>
 </div>
 We are interested in fundamental aspects of nanoparticle synthesis and structure and we have probed the oxidative stability of Cu-based nanocatalysts. See Nanoscale, 2013, 5, 342 for routes to Cu-based nanosystems for making triazoles. Our interest in how nanoparticles oxidize has been reflected in work on passivating metal nanoparticles towards degenerative processes.  We have fully characterized monodisperse magnetic seeds encapsulated by Fe3O4, using time resolved microscopy to monitor the formation of core-shell structures.
 <br><br>
 <div class='section-writing-image'>
     <div class='image'>
-	<img src='Slide4.png'/>
+	<img src='./images/Slide4.png'/>
      </div>
 </div>
 See Nanoscale, 2013, 5, 5765 and Part. Part. Syst. Charact., 2018, 35, 1800120 for M-Fe3O4 nanoparticles (M = Co, Fe). EFTEM and EELS prove the presence of sub-surface carbon that has implications for core stability (both Co and Fe cores are stable for months). Our core-shell systems also represent excellent probes in particle imaging and multicomponent signal unmixing method development. See Nano Lett., 2015, 15, 2716 and Part. Part. Syst. Charact., 2016, 33, 749.
@@ -178,7 +192,7 @@ In other work on the efficient engineering of morphology and composition on the 
 
 <div class='section-writing-image'>
     <div class='image'>
-	<img src='Slide5new.png'/>
+	<img src='./images/Slide5new.png'/>
      </div>
 </div>
 
@@ -186,7 +200,9 @@ In other work on the efficient engineering of morphology and composition on the 
 </main>
 
 <main class="main page" id='page-research-composite-energy'>
-<button onclick="goto('research')()"> <<< Research </button>
+<div class='section-heading-title'>
+  <button class='big-button' onclick="goto('RESEARCH')()"> <<< Back to Research </button>
+</div>
 <div class='section-heading-title'>Composite and energy materials</div>
 <div class='section-writing'>
 We have recently focused on novel ways of hosting active materials using new breeds of porous support. We have explored the biomedical implications of using metal-organic frameworks (MOFs) to deliver drugs (Chem. Mater., 2017, 29, 8052) but have also been at the vanguard of teams working on monolithic metal-organic frameworks (monoMOFs). These are materials that overcome the low densities and poor mechanical robustness of traditional MOFs without recourse to chemical binders or high pressures (for an invited review see Curr. Opinion Green Sust. Chem., 2018, 12, 47).
@@ -194,7 +210,7 @@ We have recently focused on novel ways of hosting active materials using new bre
 
 <div class='section-writing-image'>
     <div class='image'>
-	<img src='Slide6.png'/>
+	<img src='./images/Slide6.png'/>
      </div>
 </div>
 Efforts with co-workers at Cambridge led to a new type of composite material involving the in situ immobilization of catalytically active nanoparticles within a monoMOF. Proof-of-concept incorporated photoactive SnO2 into zeolitic imidazolate framework-8, ZIF-8. The composite SnO2-monoZIF-8 exploits the mechanical properties, structural resilience and density of a monoMOF, but leverages the photoactivity of the nanoparticles. This composite therefore displays outstanding catalytic properties, representing a critical advance that combines the treating of toxic effluents with trivial catalyst recovery. Full retention of activity is maintained over multiple catalytic cycles. See Adv. Funct. Mater., 2018, 1705588.
@@ -202,7 +218,7 @@ Efforts with co-workers at Cambridge led to a new type of composite material inv
 
 <div class='section-writing-image'>
     <div class='image'>
-	<img src='Slide7.png'/>
+	<img src='./images/Slide7.png'/>
      </div>
 </div>
 Densified monoMOFs have not only been used as scaffolds for catalysts, but can be deployed in their own right.
@@ -211,7 +227,7 @@ With Cambridge co-workers, we have engineered Zr-based UiO-66 in monolithic form
 <br><br>
 <div class='section-writing-image'>
     <div class='image'>
-	<img src='Slide8.png'/>
+	<img src='./images/Slide8.png'/>
      </div>
 </div>
 We have recently outlined the potential of monoMOFs in energy materials research in J. Am. Chem. Soc., 2020, 142, 8541.
@@ -219,7 +235,7 @@ We have recently outlined the potential of monoMOFs in energy materials research
   </div>
  </main>
 
-<main class="main page" id='page-current2'>
+<main class="main page" id='page-PROJECTS'>
 
   <div class='section-heading'>
     <div class='section-heading-title'>
@@ -231,13 +247,41 @@ We have recently outlined the potential of monoMOFs in energy materials research
    </div>
 
    <div class='section-writing'>
-   
+     Some text
+     <br/></br/>
+     Some more text
+     <br/>
+     And some more
+     <br/><br/>
+     Hopefully you get the gist...
+     <br/>
+     Here's an image...
+     <br/><br/>
+     <div class='section-writing-image'>
+         <div class='image'>
+             <img src="./images/1AEHWGroup_MichaelWebb_CopyrightUniversityofCambridge.jpg"/>
+         </div>
+     </div>
+
+
+     Try to edit some things here and see how the website responds.
+     <br/>
+
+     The brs are <span class='highlight'>breaklines...</span>
+     <br/>
+
+     You can also try some hrs...
+     <hr/>
+
+     Enjoy!
+     <hr/>
+
+  <!-- END OF SECTION -->
    </div>
- 
  </main>
 
 
-<main class="main page"  id='page-current3'>
+<main class="main page"  id='page-PEOPLE'>
   <div class='section-heading'>
     <div class='section-heading-title'>
 	    <p>People</p>
@@ -247,19 +291,12 @@ We have recently outlined the potential of monoMOFs in energy materials research
     </div>
    </div>
    <div class='section-writing'>
-   
+
    <div class='section-writing-image'>
       <div class='image'>
           <img src="./images/1AEHWGroup_MichaelWebb_CopyrightUniversityofCambridge.jpg"/>
       </div>
     </div>
-    
-<!--   <div class='section-writing-image'>
-      <div class='image'>
-          <img src="./images/2AEHWGroup_MichaelWebb_CopyrightUniversityofCambridge.jpg"/>
-      </div>
-    </div>
--->
 
    <div class='section-writing-image'>
       <div class='image'>
@@ -267,27 +304,12 @@ We have recently outlined the potential of monoMOFs in energy materials research
       </div>
     </div>
 
-<!--
-   <div class='section-writing-image'>
-      <div class='image'>
-          <img src="./images/4AEHWGroup_MichaelWebb_CopyrightUniversityofCambridge.jpg"/>
-      </div>
-    </div>
--->
-
    <div class='section-writing-image'>
       <div class='image'>
           <img src="./images/5AEHWGroup_MichaelWebb_CopyrightUniversityofCambridge.jpg"/>
       </div>
     </div>
 
-<!--
-   <div class='section-writing-image'>
-      <div class='image'>
-          <img src="./images/6AEHWGroup_MichaelWebb_CopyrightUniversityofCambridge.jpg"/>
-      </div>
-    </div>
--->
 
    <div class='section-writing-image'>
       <div class='image'>
@@ -295,13 +317,6 @@ We have recently outlined the potential of monoMOFs in energy materials research
       </div>
     </div>
 
-<!--
-   <div class='section-writing-image'>
-      <div class='image'>
-          <img src="./images/8AEHWGroup_MichaelWebb_CopyrightUniversityofCambridge.jpg"/>
-      </div>
-    </div>
--->
 
    <div class='section-writing-image'>
       <div class='image'>
@@ -309,13 +324,6 @@ We have recently outlined the potential of monoMOFs in energy materials research
       </div>
     </div>
 
-<!--
-   <div class='section-writing-image'>
-      <div class='image'>
-          <img src="./images/10AEHWGroup_MichaelWebb_CopyrightUniversityofCambridge.jpg"/>
-      </div>
-    </div>
--->
 
    <div class='section-writing-image'>
       <div class='image'>
@@ -323,13 +331,6 @@ We have recently outlined the potential of monoMOFs in energy materials research
       </div>
     </div>
 
-<!--
-   <div class='section-writing-image'>
-      <div class='image'>
-          <img src="./images/12AEHWGroup_MichaelWebb_CopyrightUniversityofCambridge.jpg"/>
-      </div>
-    </div>
--->
 
    <div class='section-writing-image'>
       <div class='image'>
@@ -337,24 +338,16 @@ We have recently outlined the potential of monoMOFs in energy materials research
       </div>
     </div>
 
-<!--
    <div class='section-writing-image'>
       <div class='image'>
-          <img src="./images/14AEHWGroup_MichaelWebb_CopyrightUniversityofCambridge.jpg"/>
-      </div>
-    </div>
--->
-
-   <div class='section-writing-image'>
-      <div class='image'>
-          <img src="./img3.jpg"/>
+          <img src="./images/img3.jpg"/>
       </div>
     </div>
 
    </div>
 </main>
 
-<main class="main page" id='page-current4'>
+<main class="main page" id='page-PUBLICATIONS'>
 
   <div class='section-heading'>
     <div class='section-heading-title'>
@@ -364,39 +357,55 @@ We have recently outlined the potential of monoMOFs in energy materials research
 	    <p>You can find our work on ...</p>
     </div>
    </div>
-  
+
   <div class='section-writing'>
-  
+    The Department Page <br/>
+    <a target='_blank' rel='noopener' href="https://www.ch.cam.ac.uk/person/aehw2#block-staff-page-publications">https://www.ch.cam.ac.uk/person/aehw2#block-staff-page-publications</a>
   </div>
  </main>
 
-<main class="main page" id='page-current5'>
+<main class="main page" id='page-OPPORTUNITIES'>
   <div class='section-heading'>
     <div class='section-heading-title'>
 	    <p>Opportunities</p>
     </div>
     <div class='section-heading-paragraph'>
-	    <p>Join us ...</p>
+      <p> Join us... </p>
+    </div>
+    <div class='section-writing'>
+	    The Wheatley Group is always keen to hear from curious, driven individuals who want to push the boundaries of chemical research.
+<br/><br/>
+      Whether you are a prospective PhD student, MPhil candidate, postdoctoral researcher, research assistant, we offer a collaborative and intellectually stimulating environment where ambitious ideas are taken seriously and independent thinking is genuinely valued. Visiting PhD students and undergraduate students interested in summer research placements are also welcome in our labs.
+<br/><br/>
+<div class='section-writing-image'>
+ <div class='image'>
+   <img src='./images/img4.jpg'/>
+ </div>
+</div>
+<br/><br/>
+We believe great science happens at the intersection of rigorous experimentation and creative thought, and we are committed to supporting every member of the group in reaching their full potential. We warmly welcome applicants from all backgrounds and nationalities — our group, though small, is proudly international and diverse, and we consider that breadth of perspective to be one of our greatest strengths.
+<br/><br/>
+Collaboration is central to how we work. Within Cambridge, we maintain active research partnerships with the Wright, Reisner, and Vendruscolo groups in the Department of Chemistry, as well as colleagues in the Department of Materials Science and Metallurgy. Beyond Cambridge, we have established international collaborations spanning Africa, China, and Spain, and we are always open to forging new connections.
+<br/><br/>
+If you are based in industry and interested in exploring a research collaboration, we would be delighted to discuss how our expertise might complement your goals — we have a strong track record of working across the academic–industry interface to tackle problems with real-world relevance. We are equally keen to connect with organisations and individuals who share our enthusiasm for funding curiosity-driven chemistry and supporting its translation into meaningful applications.
+<br/><br/>
+If any of this resonates with you, please do not hesitate to get in touch at: <span class='highlight'>aehw2@cam.ac.uk</span>
     </div>
    </div>
-
-  <div class='section-writing'>
-  
-  </div>
 
  </main>
 
 <footer class='footer'>
-<div> <p class='grey'> Wheatley Lab Cambridge </p> </div>
- <div>
-  <button onclick="combine(goto('current'))">Home</button>
-  <button onclick="combine(goto('research'))">Research - Overview</button>
-  <button onclick="combine(goto('current2'))">Projects & Applications</button>
-  <button onclick="combine(goto('current3'))">People</button>
-  <button onclick="combine(goto('current4'))">Publications</button>
-  <button onclick="combine(goto('current5'))">Opportunities</button>
+<div> <p class='grey-highlight'> Wheatley Lab Cambridge </p> </div>
+ <div class='column'>
+  <button onclick="combine(goto('HOME'))">Home</button>
+  <button onclick="combine(goto('RESEARCH'))">Research - Overview</button>
+  <button onclick="combine(goto('PROJECTS'))">Projects & Applications</button>
+  <button onclick="combine(goto('PEOPLE'))">People</button>
+  <button onclick="combine(goto('PUBLICATIONS'))">Publications</button>
+  <button onclick="combine(goto('OPPORTUNITIES'))">Opportunities</button>
 </div>
-<div> <p class='grey'> Copyright University of Cambridge</p> </div>
+<div> <p class='grey-highlight'> &copy; University of Cambridge</p> </div>
  </footer>
 
 
@@ -406,7 +415,7 @@ We have recently outlined the potential of monoMOFs in energy materials research
 <script type='text/javascript'>
 
 const constants = {
-  defaultpage: 'current'
+  defaultpage: 'HOME'
 }
 
 function combine(...functions){
@@ -447,7 +456,7 @@ window.onload = ()=>{
 }
 window.onhashchange = function() {
 	/* https://stackoverflow.com/questions/25806608/how-to-detect-browser-back-button-event-cross-browser */
- 	PageUp();	
+ 	PageUp();
 }
 
 function toggleMenuW3Schools(){
@@ -462,15 +471,6 @@ function closeMenuW3Schools(){
 	const menus = document.getElementById('myTopnav');
 	if (menus.classList.contains('responsive')){
 		menus.classList.remove('responsive')
-	}
-}
-
-function toggleMenuJs(){
-	const menus = document.getElementsByClassName('dropdown-menu')[0];
-	if (menus.classList.contains('responsive')){
-		menus.classList.remove('responsive')
-	} else {
-		menus.classList.add('responsive');
 	}
 }
 

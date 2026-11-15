@@ -1,10 +1,40 @@
+
+/* VARIABLES DEFINED HERE, e.g. colour scheme.*/
+:root {
+  --primary-bg-color: #1e90ff;
+  --wheatley-colour: #ff7700;
+  --colour-section-heading: black;
+  --footer-colour: #ffaa00;
+  --button-background-colour: white;
+  --button-text-colour: #888;
+  --topnav-button-background-colour: #777;
+  --topnav-button-hover-background-colour: #ccc;
+  --topnav-background-colour: #fff;
+  --colour-light-grey: #eee;
+  --colour-button-normal: #000;
+  --colour-button-contrast: #eee;
+  --fontsize-scale-section-writing: 1.2rem;
+  --font-size: 16px;
+  --section-writing-padding-bottom: 20rem;
+}
+/* This is variable changes for (vertical) mobile devices: */
+@media screen and (max-width: 600px) {
+  :root {
+    --font-size: 20px;
+    --section-writing-padding-bottom: 1rem;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
 
+html {
+  font-size: var(--font-size);
+}
 body {
   margin: 0;
-  font-size: 20px;
+  font-size: var(--font-size);
 }
 
 .section-image > .image {
@@ -13,11 +43,13 @@ body {
 
 @media screen and (max-width: 600px) {
   .section-heading {
+      color: var(--colour-section-heading);
       width: min(50rem, 97%);
       margin: auto auto;
   }
 }
 .section-heading {
+  color: var(--colour-section-heading);
   width: min(50rem, 97%);
   margin: auto auto;
 }
@@ -26,16 +58,38 @@ body {
   font-size: 2rem;
 }
 .section-heading-paragraph {
- font-size: 1rem;
+ font-size: 1.4rem;
+ padding-bottom: 1.4rem;
+}
+
+@media screen and (max-width: 600px) {
+  .section-landing {
+      width: min(50rem, 97%);
+      margin: auto auto;
+  }
+}
+.section-landing {
+  width: min(50rem, 97%);
+  margin: auto auto;
+}
+.section-landing-title {
+  text-align: center;
+  font-size: 2rem;
+}
+.section-landing-paragraph {
+ font-size: 1.4rem;
+ padding-bottom: 1.4rem;
 }
 
 .section-writing {
   width: min(50rem, 97%);
-  font-size: 1rem;
+  font-size: var(--fontsize-scale-section-writing);
   margin: auto auto;
-  padding-bottom: 20rem;
   letter-spacing: 0.04rem;
   border-top: 1px solid black;
+}
+.section-writing:last-child {
+  padding-bottom: var(--section-writing-padding-bottom);
 }
 .section-writing.wide {
   width: 97%;
@@ -61,34 +115,39 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
 }
 @media screen and (max-width: 600px) {
-.grid-3 {
-  display: grid;
-  grid-template-columns: 1fr;
-}
+  .grid-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 .footer{
- background-color: grey;
+ background-color: var(--footer-colour);
  margin-bottom: 0;
+ padding: 0.1rem 1rem 0.1rem 1rem;
+}
+.column>*{
+  display: block;
 }
 .grey {
  margin-bottom: 0;
- color: #eee;
+ color: var(--colour-light-grey);
+}
+.grey-highlight {
+ margin-bottom: 0;
+ color: var(--colour-light-grey);
+ font-size: 1.5rem;
 }
 
 .logo-menu {
   width: 1.7rem;
 }
 
-.dropdown-menu {
-  visibility: visible;
-}
-
 button {
   transition: linear 0.5s;
-  background-color: white;
+  background-color: var(--button-background-colour);
   border: none;
-  color: #888;
+  color: var(--button-text-colour);
   padding: 0.5rem 0.6rem;
   text-align: center;
   text-decoration: none;
@@ -97,68 +156,28 @@ button {
   font-size: 1rem;
   border-bottom: 2px solid transparent;
 }
+button:hover {
+  color: var(--colour-button-normal);
+  border-bottom: 2px solid var(--colour-button-normal);
+}
+
 button.full-border {
  border: 2px solid transparent;
 }
+button.full-border:hover {
+  color: var(--colour-button-normal);
+  border-bottom: 2px solid var(--colour-button-normal);
+}
+
 .footer button {
   background-color: transparent;
-  color: #eee;
-}
-
-button:hover {
-  color: black;
-  border-bottom: 2px solid black;
-}
-button.full-border:hover {
-  color: black;
-  border: 2px solid black;
+  color: var(--colour-button-contrast);
 }
 .footer button:hover{
-  color: white;
-  border-bottom: 2px solid white;
+  color: var(--colour-button-contrast);
+  border-bottom: 2px solid var(--colour-button-contrast);
 }
 
-.dropdown-menu {
-  background-color: #fefefe;
-  overflow: hidden;
-}
-
-.dropdown-menu > * {
-  float: left;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-}
-
-.dropdown-menu > *.active {
-  background-color: #333;
-  color: #ffffff;
-}
-
-@media screen and (max-width: 600px) {
-  .dropdown-menu > *:not(.toggle-menu) {
-    display: none;
-  }
-  .dropdown-menu > .toggle-menu {
-    float: right;
-    display: block;
-  }
-}
-@media screen and (max-width: 600px) {
-  .dropdown-menu.responsive {
-    position: relative;
-  }
-  .dropdown-menu.responsive > .toggle-menu {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .dropdown-menu.responsive > * {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
 img {
   width: 100%;
 }
@@ -167,20 +186,43 @@ img {
   font-size: 1.2rem;
 }
 
-.dropdown-menu > * {
-  display: inline-block;
+.highlight{
+  font-size: 1.2rem;
+  color: var(--wheatley-colour)
 }
 
 /*======== CSS from W3Schools for topnav ========= */
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #fff; /*#333;*/
+  background-color: var(--topnav-background-colour); /*#333;*/
   overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav button {
   float: left;
+  display: block;
+  color: var(--topnav-button-background-colour); /*#f2f2f2;*/
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Change the color of links on hover */
+.topnav button:hover {
+  background-color: var(--topnav-button-hover-background-colour); /*#ddd;*/
+  color: #111;/*black;*/
+}
+
+/* Add an active class to highlight the current page */
+.topnav button.active {
+  background-color: #999; /*#04AA6D;*/
+  color: white;
+}
+
+/* Style the links inside the navigation bar */
+.big-button {
   display: block;
   color: #777; /*#f2f2f2;*/
   text-align: center;
@@ -190,15 +232,9 @@ img {
 }
 
 /* Change the color of links on hover */
-.topnav button:hover {
+.big-button:hover {
   background-color: #ccc; /*#ddd;*/
   color: #111;/*black;*/
-}
-
-/* Add an active class to highlight the current page */
-.topnav button.active {
-  background-color: #999; /*#04AA6D;*/
-  color: white;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
