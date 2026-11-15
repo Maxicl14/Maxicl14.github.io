@@ -17,7 +17,10 @@ The site is static
  - See how the parts in index.html correspond to the website by editing these and seeing how the website responds (use developer tools and click disable cache [as per next section] to stop caching resources on your local site version, if site doesn't change at any point)
  - Editting the files locally in a separate folder does not change the website, nor does using developer tools so feel free to do whatever.
  - Copy and paste sections that you need to other sections.
- - Go to ./index.html#PROJECTS for example use of the components.
+ - Go to ./index.html#PROJECTS for example use of the components. Try to edit this.
+ - Don't edit anything in the <script> tag if you only want to change the content, this is functionality code.
+ - You can edit it if you know what it does or how to.
+ - The links work with e.g. goto("RESEARCH") and "page-RESEARCH", use Ctrl-F to find these in code. 
 
 ### Use Developer Tools in your browser for understanding the website structure
  - Developer tools in your browser (F12 or Ctrl Shift I) are useful to look at how the website corresponds to code
