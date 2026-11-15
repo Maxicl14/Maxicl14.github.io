@@ -20,11 +20,14 @@ The site is static
  - Go to ./index.html#PROJECTS for example use of the components. Try to edit this.
  - Don't edit anything in the <script> tag if you only want to change the content, this is functionality code.
  - You can edit it if you know what it does or how to.
- - The links work with e.g. goto("RESEARCH") and "page-RESEARCH", use Ctrl-F to find these in code.
+ - The links work like this:  goto("RESEARCH") leads to id='page-RESEARCH', use Ctrl-F to find these in code.
 
 # Use Developer Tools in your browser for understanding the website structure
  - Developer tools in your browser (F12 or Ctrl Shift I) are useful to look at how the website corresponds to code
  - Use the mouse tool in the top left corner of this to point at the webpage and see where it comes uop in code (Elements tab).
  - Use network tab to refresh by saying Disable Cash (on) and refreshing.
 
-# Good luck, any questions, contact Maxim Silin (Cambridge 2022 2026).
+# Good luck
+ - Any questions, contact Maxim Silin (Cambridge 2022 2026).
+ - Or Nicholas Sammy
+ - Feel free to upddate this guide as and when you see fit.

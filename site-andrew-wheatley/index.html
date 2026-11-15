@@ -14,13 +14,13 @@
 -->
  <!--W3 Schools: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
 <div class="topnav" id="myTopnav">
-  <button onclick="combine(goto('HOME'), closeMenuW3Schools)">Home</button>
-  <button onclick="combine(goto('RESEARCH'), closeMenuW3Schools)">Research - Overview</button>
-  <button onclick="combine(goto('PROJECTS'), closeMenuW3Schools)">Projects & Applications</button>
-  <button onclick="combine(goto('PEOPLE'), closeMenuW3Schools)">People</button>
-  <button onclick="combine(goto('PUBLICATIONS'), closeMenuW3Schools)">Publications</button>
-  <button onclick="combine(goto('OPPORTUNITIES'), closeMenuW3Schools)">Opportunities</button>
-  <button href="javascript:void(0);" class="icon" onclick="toggleMenuW3Schools()">
+  <button onclick="combine(goto('HOME'), closeMenuW3)">Home</button>
+  <button onclick="combine(goto('RESEARCH'), closeMenuW3)">Research - Overview</button>
+  <button onclick="combine(goto('PROJECTS'), closeMenuW3)">Projects & Applications</button>
+  <button onclick="combine(goto('PEOPLE'), closeMenuW3)">People</button>
+  <button onclick="combine(goto('PUBLICATIONS'), closeMenuW3)">Publications</button>
+  <button onclick="combine(goto('OPPORTUNITIES'), closeMenuW3)">Opportunities</button>
+  <button href="javascript:void(0);" class="icon" onclick="toggleMenuW3()">
     <i>Menu</i>
   </button>
 </div>
@@ -459,7 +459,7 @@ window.onhashchange = function() {
  	PageUp();
 }
 
-function toggleMenuW3Schools(){
+function toggleMenuW3(){
 	const menus = document.getElementById('myTopnav');
 	if (menus.classList.contains('responsive')){
 		menus.classList.remove('responsive')
@@ -467,7 +467,7 @@ function toggleMenuW3Schools(){
 		menus.classList.add('responsive');
 	}
 }
-function closeMenuW3Schools(){
+function closeMenuW3(){
 	const menus = document.getElementById('myTopnav');
 	if (menus.classList.contains('responsive')){
 		menus.classList.remove('responsive')
