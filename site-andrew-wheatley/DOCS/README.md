@@ -1,16 +1,16 @@
-### Read this file to understand the website and how to use and edit it.
-# Quick intro
+# Read this file to understand the website and how to use and edit it.
+### Quick intro
 The site is static
-### Main files
-# index.html
+# Main files
+### index.html
   Edit this to edit the content of the webpage, and its functionality.
-# style.CSS
+### style.CSS
   - Edit this to edit the styling (borders, padding, space, colours) of the webpage
   - The :root variables at the start of the file are for you to Edit
   - px means pixels, rem means units relative to parent node fontsize, percent (%) is simple enough
   - colours like #ffffff are in HEXADECIMAL notation
 
-### How to edit the website
+# How to edit the website
 
  - Copy the files to a folder.
  - Open index.html with Chrome or another browser.
@@ -20,9 +20,11 @@ The site is static
  - Go to ./index.html#PROJECTS for example use of the components. Try to edit this.
  - Don't edit anything in the <script> tag if you only want to change the content, this is functionality code.
  - You can edit it if you know what it does or how to.
- - The links work with e.g. goto("RESEARCH") and "page-RESEARCH", use Ctrl-F to find these in code. 
+ - The links work with e.g. goto("RESEARCH") and "page-RESEARCH", use Ctrl-F to find these in code.
 
-### Use Developer Tools in your browser for understanding the website structure
+# Use Developer Tools in your browser for understanding the website structure
  - Developer tools in your browser (F12 or Ctrl Shift I) are useful to look at how the website corresponds to code
  - Use the mouse tool in the top left corner of this to point at the webpage and see where it comes uop in code (Elements tab).
  - Use network tab to refresh by saying Disable Cash (on) and refreshing.
+
+# Good luck, any questions, contact Maxim Silin (Cambridge 2022 2026).
